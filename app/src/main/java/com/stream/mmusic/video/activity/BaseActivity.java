@@ -1,4 +1,4 @@
-package com.example.jdsm.musicdemo.activity;
+package com.stream.mmusic.video.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

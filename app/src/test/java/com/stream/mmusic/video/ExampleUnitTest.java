@@ -1,4 +1,4 @@
-package com.example.jdsm.musicdemo;
+package com.stream.mmusic.video;
 
 import org.junit.Test;
 

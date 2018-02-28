@@ -1,4 +1,4 @@
-package com.example.jdsm.musicdemo;
+package com.stream.mmusic.video;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

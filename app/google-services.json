@@ -1,0 +1,161 @@
+{
+  "project_info": {
+    "project_number": "735857470865",
+    "firebase_url": "https://u-tunes-60259.firebaseio.com",
+    "project_id": "u-tunes-60259",
+    "storage_bucket": "u-tunes-60259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735857470865:android:6ec9a7f869563857",
+        "android_client_info": {
+          "package_name": "com.utunes.freemusic.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735857470865-45qm15uqqndrpqej3rhfn1h5081e7hog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.utunes.freemusic.video",
+            "certificate_hash": "c177a276cdc711a66f02619cee050993b46e0693"
+          }
+        },
+        {
+          "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTSF2oAQpl7s1lKkCNpxPrRbo6YQ2rW_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735857470865:android:d1cb209ed669c20d",
+        "android_client_info": {
+          "package_name": "com.hi.freemusic.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735857470865-lv89cb4jpo7g5eadecbdh17tocj19avd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hi.freemusic.video",
+            "certificate_hash": "a6032b7f137a784175a33a95ccfa11fb7b0a32c4"
+          }
+        },
+        {
+          "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTSF2oAQpl7s1lKkCNpxPrRbo6YQ2rW_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735857470865:android:ec005dd8e732f85e",
+        "android_client_info": {
+          "package_name": "com.stream.ytmusic.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTSF2oAQpl7s1lKkCNpxPrRbo6YQ2rW_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735857470865:android:be65a44a7e948846",
+        "android_client_info": {
+          "package_name": "com.stream.mmusic.video"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735857470865-htqfrjqkc5rkaervptf577q907hmvirj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTSF2oAQpl7s1lKkCNpxPrRbo6YQ2rW_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

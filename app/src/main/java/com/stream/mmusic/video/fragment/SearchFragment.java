@@ -1,6 +1,6 @@
-package com.example.jdsm.musicdemo.fragment;
+package com.stream.mmusic.video.fragment;
 
-import com.example.jdsm.musicdemo.R;
+import com.stream.mmusic.video.R;
 
 /**
  * Created by jdsm on 2018/2/27.

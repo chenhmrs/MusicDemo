@@ -1,5 +1,6 @@
-package com.example.jdsm.musicdemo.activity;
+package com.stream.mmusic.video.activity;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -11,11 +12,11 @@ import android.view.MenuItem;
 ;
 
 
-import com.example.jdsm.musicdemo.R;
-import com.example.jdsm.musicdemo.activity.BaseActivity;
-import com.example.jdsm.musicdemo.fragment.HomeFragment;
-import com.example.jdsm.musicdemo.fragment.MyMusicFragment;
-import com.example.jdsm.musicdemo.fragment.SearchFragment;
+import com.stream.mmusic.video.R;
+import com.stream.mmusic.video.fragment.HomeFragment;
+import com.stream.mmusic.video.fragment.MyMusicFragment;
+import com.stream.mmusic.video.fragment.SearchFragment;
+import com.stream.mmusic.video.service.DataService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ public class MainActivity extends BaseActivity {
     SearchFragment mSearchFragment;
     MyMusicFragment myMusicFragment;
     List<Fragment> fragmentList;
-    MenuItem mMenuItem;
+    MenuItem menuItem;
     @Override
     protected void setLayoutId() {
         LatoutId=R.layout.activity_main;
@@ -43,9 +44,10 @@ public class MainActivity extends BaseActivity {
     protected void initView() {
        setSupportActionBar(toolbar);
        initFragment();
-       mViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
-       mViewPager.setOffscreenPageLimit(3);
-       mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        mViewPager.setOffscreenPageLimit(4);
+        startService(new Intent(this, DataService.class));
+        mViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
            @Override
            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -53,13 +55,18 @@ public class MainActivity extends BaseActivity {
 
            @Override
            public void onPageSelected(int position) {
-                if (mMenuItem!=null)
-                    mMenuItem.setCheckable(false);
-                else{
-                     mBottomNavigationView.getMenu().getItem(0).setCheckable(false);
-                    }
-                mBottomNavigationView.getMenu().getItem(position).setCheckable(true);
+                switch (position){
+                    case 0:
+                        invalidateOptionsMenu();
+                        break;
+                    case 1:
+                        invalidateOptionsMenu();
+                        break;
+                    case 2:
+                        invalidateOptionsMenu();
+                        break;
                 }
+               mBottomNavigationView.getMenu().getItem(position).setChecked(true);                }
 
 
            @Override
@@ -71,15 +78,18 @@ public class MainActivity extends BaseActivity {
            @Override
            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                switch (item.getItemId()){
-                   case R.id.item_hot:
+                   case R.id.item_hot:{
                        mViewPager.setCurrentItem(0);
                        return true;
-                   case R.id.item_search:
+                   }
+                   case R.id.item_search:{
                        mViewPager.setCurrentItem(1);
                        return true;
-                   case R.id.item_my:
+                   }
+                   case R.id.item_my:{
                        mViewPager.setCurrentItem(2);
                        return true;
+                   }
                }
                return false;
            }
