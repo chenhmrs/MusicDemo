@@ -1,4 +1,4 @@
-package com.example.jdsm.musicdemo;
+package com.example.jdsm.musicdemo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
