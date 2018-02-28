@@ -36,8 +36,8 @@ public class DataService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d(TAG, "MainActivity" +"dfd");
-        loadData(CloudConfig.HOME_BANNER,5);
+        Log.d("MainActivity", "MainActivity" +"dfd");
+        loadData(CloudConfig.HOT_CHARTS, 1);
     }
 
     public void loadData(final String title, final int limit) {
@@ -63,13 +63,13 @@ public class DataService extends Service {
                                 }
 
                                 //mHomeData.addHomePlaylist(title, result);
-                                Log.d(TAG, "MainActivity" + result.size());
-                                Log.d(TAG, "onComplete: title =  " + title + " size = " + result.size());
+                                Log.d("MainActivity",  "szie="+ result.size());
+                                Log.d("MainActivity", "onComplete: title =  " + title + " size = " + result.size());
 
                             } else {
 
                                 // mHomeData.handleError(title, limit);
-                                Log.d(TAG, "Error getting documents: " + title + "--->", task.getException());
+                                Log.d("MainActivity", "Error getting documents: " + title + "--->", task.getException());
                             }
                         }
                     });
@@ -91,9 +91,9 @@ public class DataService extends Service {
                                     result.add(homePlaylist);
                                 }
                                 //   mHomeData.addHomePlaylist(title, result);
-                                Log.d(TAG, "onComplete: title =  " + title + " size = " + result.size());
+                                Log.d("MainActivity", "onComplete: title =  " + title + " size = " + result.size());
                             } else {
-                                Log.d(TAG, "Error getting documents: " + title + "--->", task.getException());
+                                Log.d("MainActivity", "Error getting documents: " + title + "--->", task.getException());
                                 //  mHomeData.handleError(title, limit);
                             }
 
