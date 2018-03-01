@@ -42,8 +42,8 @@ public class MainActivity extends BaseActivity {
     }
     @Override
     protected void initView() {
-       setSupportActionBar(toolbar);
-       initFragment();
+        setSupportActionBar(toolbar);
+        initFragment();
         mViewPager.setOffscreenPageLimit(4);
         startService(new Intent(this, DataService.class));
         mViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));

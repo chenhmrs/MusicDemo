@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="music_type" translatable="false">
+        <item>Activities &amp; Moods</item>
+        <item>Artist</item>
+        <item>Hot List</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Country</item>
+        <item>Hip Hop</item>
+        <item>Latin</item>
+        <item>Electronic</item>
+    </string-array>
+</resources>
