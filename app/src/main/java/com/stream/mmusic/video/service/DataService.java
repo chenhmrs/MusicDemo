@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -13,14 +12,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.stream.mmusic.Data.HomeData;
+import com.stream.mmusic.video.Data.HomeData;
 import com.stream.mmusic.video.R;
 import com.stream.mmusic.video.bean.HomePlaylist;
-import com.stream.mmusic.video.constant.CloudConfig;
 
 import java.util.ArrayList;
 
-import static android.content.ContentValues.TAG;
 import static com.stream.mmusic.video.constant.CloudConfig.COLLECTION_PLAYLIST;
 import static com.stream.mmusic.video.constant.CloudConfig.HOME_BANNER;
 import static com.stream.mmusic.video.constant.CloudConfig.HOT_CHARTS;

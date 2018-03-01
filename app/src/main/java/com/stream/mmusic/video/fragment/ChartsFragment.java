@@ -11,6 +11,12 @@ public class ChartsFragment extends BaseFragment {
     public static ChartsFragment getInstance(){
         return new ChartsFragment();
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
     @Override
     protected void setLayoutId() {
         layoutId= R.layout.fragment_charts;

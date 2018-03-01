@@ -11,6 +11,12 @@ public class TrendFragment extends BaseFragment {
     public static TrendFragment getInstance(){
         return new TrendFragment();
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
     @Override
     protected void setLayoutId() {
         layoutId= R.layout.fragment_trend;

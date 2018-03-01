@@ -1,6 +1,5 @@
-package com.stream.mmusic.Data;
+package com.stream.mmusic.video.Data;
 
-import android.provider.MediaStore;
 import android.util.Log;
 
 import com.stream.mmusic.video.bean.HomePlaylist;
@@ -10,7 +9,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Observable;
-import java.util.Observer;
 import java.util.Set;
 
 /**

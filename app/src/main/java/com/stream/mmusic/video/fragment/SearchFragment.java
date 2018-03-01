@@ -11,6 +11,12 @@ public class SearchFragment extends BaseFragment {
     public static SearchFragment getInstance() {
         return new SearchFragment();
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
     @Override
     protected void setLayoutId() {
         layoutId= R.layout.fragment_search;

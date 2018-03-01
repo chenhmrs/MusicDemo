@@ -11,6 +11,12 @@ public class TopFragment extends BaseFragment {
     public static TopFragment getInstance(){
         return new TopFragment();
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
     @Override
     protected void setLayoutId() {
         layoutId= R.layout.fragment_top;

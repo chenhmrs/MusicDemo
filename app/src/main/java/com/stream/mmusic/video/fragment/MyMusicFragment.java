@@ -11,6 +11,12 @@ public class MyMusicFragment extends BaseFragment {
     public static MyMusicFragment getInstance() {
         return new MyMusicFragment();
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
     @Override
     protected void setLayoutId() {
         layoutId= R.layout.fragment_mymusic;

@@ -26,8 +26,11 @@ public abstract class BaseFragment extends Fragment {
         setLayoutId();
         View view=inflater.inflate(layoutId,container,false);
         ButterKnife.bind(this,view);
+        initView();
         return view;
     }
+
+    protected abstract void initView();
 
     protected abstract void setLayoutId();
 
